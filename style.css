@@ -29,8 +29,6 @@ body {
     justify-content: center;
 
     background: var(--very-light-gray);
-
-    height: 100vh
 }
 
 main {
@@ -48,7 +46,7 @@ main {
     align-items: center;
     justify-content: center;
 
-    margin-top: 2vh;
+    margin-top: 8vh;
 }
 
 h1 {
@@ -134,12 +132,21 @@ footer p {
 }
 
 @media (min-width: 768px) {
+    #description {
+        width: 60%;
+    }
+    
     .card {
         width: 100%;
     }
 }
 
 @media (min-width: 1024px) {
+    body {
+        height: 100vh
+
+    }
+
     #cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -156,6 +163,20 @@ footer p {
     }
 }
 
+@media (min-width: 1360px) {
+    #title-description {
+        margin-top: 0
+    }
+
+    #description {
+        margin: 1.5rem 1rem;
+    }
+
+    .card {
+        width: 50vh;
+    }
+}
+
 @media (min-width: 1440px) {
     main {
         padding: 0 20rem;
@@ -167,10 +188,6 @@ footer p {
 
     h2 {
         font-size: 3rem
-    }
-
-    #description {
-        padding: 0 24rem;
     }
 
     #cards {
